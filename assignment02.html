@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Assignment - 02</title>
+    <style>
+        #div1 {
+            background-color: aliceblue;
+            margin: auto;
+            border: solid 3px red;
+            padding: 10px;
+            width: 40%;
+            height: 860px;
+
+        }
+
+        #leftbut {
+            position: absolute;
+            font-size: 200%;
+        }
+
+        #rightbut {
+            position: absolute;
+            right: 30%;
+            font-size: 200%
+        }
+
+        #centerbut {
+            position: absolute;
+            right: 44%;
+            font-size: 200%
+        }
+
+        #p1 {
+            font-size: 130%;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function page1() {
+            window.location = "page1"
+        }
+        function page2() {
+            window.location = "page2"
+        }
+        function about() {
+            window.location = "about"
+        }
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <h1 style="text-align: center;">NCC Assignment - 02</h1>
+        <hr>
+        <p id="p1">Hello! This is the home page of our website.</p>
+        <img src="https://i.pinimg.com/originals/e2/c7/61/e2c7615dbc25056e057f49fb37d19752.jpg" width="100%" />
+        <p style="font-size:130% ;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis is the second assignment from NCC. More
+            than two web pages are connected by the use of resquest and response
+            functions. You can use /about, /page1 and /page2 after localhost:2000 to visit our other pages. Also, you
+            can simply click the buttons below to visit those pages.<br><br>
+            <button id="leftbut" onclick="page1()">Page 1</button>
+            <button id="rightbut" onclick="page2()">Page 2</button>
+            <button id="centerbut" onclick="about()">About This Page</button>
+    </div>
+</body>
+
+</html>
